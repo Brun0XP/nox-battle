@@ -1,0 +1,18 @@
+#Available languages: en_US and pt_BR
+language: en_US
+
+mysql:
+  enabled: false
+  hostname: localhost
+  port: 3306
+  database: database
+  username: root
+  password: 12345678
+  table_prefix: nbattle_
+commands:
+  help: help
+  duel: duel
+  accept: accept
+  decline: decline
+  quit: quit
+  admin: admin

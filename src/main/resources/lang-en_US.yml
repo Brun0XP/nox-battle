@@ -1,0 +1,13 @@
+prefix: '&7[&6NoxBattle&7] &f'
+commands:
+  help:
+    player:
+      - '&e&m-------&r&e[ NoxBattle - Help Menu ]&m-------'
+      - '&e/1v1 {command_help} &7- &fshow this help menu.'
+      - '&e/1v1 {command_duel} &7<player> - &fcall a player to the duel.'
+      - '&e/1v1 {command_accept} &7- &faccepts a duel challenge.'
+      - '&e/1v1 {command_decline} &7- &frejects a duel challenge.'
+      - '&e/1v1 {command_quit} &7- &fgive up the battle.'
+      - '&c/1v1 {command_admin} &7- show admin commands.'
+      - '&e&m-----------------------------------'
+    admin:

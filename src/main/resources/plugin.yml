@@ -1,0 +1,39 @@
+name: ${project.name}
+main: ${project.groupId}.${project.artifactId}.Main
+version: ${project.version}
+description: ${project.description}
+author: Brun0XP
+softdepend: [Vault]
+api-version: 1.13
+
+commands:
+  1v1:
+    description: Main command
+    aliases: [x1]
+
+permissions:
+  noxbattle.use:
+    default: false
+    children:
+      noxbattle.command.duel: true
+      noxbattle.command.accept: true
+      noxbattle.command.reject: true
+      noxbattle.command.info: true
+  noxbattle.admin:
+    default: false
+    children:
+      noxbattle.use: true
+      noxbattle.command.admin.setpositions: true
+      noxbattle.command.admin.reload: true
+  noxbattle.command.duel:
+    default: false
+  noxbattle.command.accept:
+    default: false
+  noxbattle.command.reject:
+    default: false
+  noxbattle.command.info:
+    default: false
+  noxbattle.command.admin.setpositions:
+    default: false
+  noxbattle.command.admin.reload:
+    default: false
