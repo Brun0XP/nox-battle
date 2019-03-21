@@ -16,3 +16,7 @@ commands:
   decline: decline
   quit: quit
   admin: admin
+battle:
+  time:
+    # In seconds
+    invite: 60

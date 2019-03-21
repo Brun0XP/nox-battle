@@ -16,3 +16,7 @@ commands:
     error-console: '&cThis command can not be run on the console.'
     wait: '&cPlease wait to challenge a player again.'
     player-already-challenged: '&cThis player has already been challenged by someone, wait to challenge him.'
+    invitation-sent: '&aYou sent a challenge from 1v1 to {challenged_player}, the player has {invitation_time} seconds to accept.'
+    invitation-received: '&a{challenger_player} sent you a 1v1 challenge, you have {invitation_time} seconds to accept (/1v1 {command_accept}).'
+    invitation-expired-sender: '&cInvitation expired, {challenged_player} did not accept the challenge in the defined time.'
+    invitation-expired-receiver: '&cInvitation expired, you did not accept {challenger_player}''s challenge at the set time'

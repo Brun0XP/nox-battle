@@ -25,13 +25,15 @@ public class LanguageFile extends AbstractFile{
     }
 
     public String replace(String message) {
+        // Only replaces that can be used globally
         String replaced = message
                 .replace("{command_help}", this.main.getConfig().getString("commands.help"))
                 .replace("{command_duel}", this.main.getConfig().getString("commands.duel"))
                 .replace("{command_accept}", this.main.getConfig().getString("commands.accept"))
                 .replace("{command_decline}", this.main.getConfig().getString("commands.decline"))
                 .replace("{command_quit}", this.main.getConfig().getString("commands.quit"))
-                .replace("{command_admin}", this.main.getConfig().getString("commands.admin"));
+                .replace("{command_admin}", this.main.getConfig().getString("commands.admin"))
+                .replace("{invitation_time}", String.valueOf(this.main.getConfig().getLong("battle.time.invite")));
 
         return ChatColor.translateAlternateColorCodes('&', replaced);
     }

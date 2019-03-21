@@ -71,11 +71,16 @@ public class BattleCommand implements CommandExecutor {
             challenger.sendMessage(this.getMain().getLanguage().getString("player-already-challenged"));
             return;
         }
-        Battle newBattle = new Battle(challenger, challenged, new Arena(this.getMain()));
+        Battle newBattle = new Battle(this.getMain(), challenger, challenged, new Arena(this.getMain()));
         newBattle.init();
     }
 
     private void accept(Player challenged) {
-
+        if (challenged.hasPermission("noxbattle.command.accept")) {
+            challenged.sendMessage(this.getMain().getLanguage().getString("commands.no-permission"));
+            return;
+        }
+        Battle battle = Battle.getBattle(challenged);
+        battle.accept();
     }
 }
