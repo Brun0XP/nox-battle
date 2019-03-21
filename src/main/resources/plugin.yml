@@ -15,6 +15,7 @@ permissions:
   noxbattle.use:
     default: false
     children:
+      noxbattle.command.help: true
       noxbattle.command.duel: true
       noxbattle.command.accept: true
       noxbattle.command.reject: true
@@ -25,6 +26,8 @@ permissions:
       noxbattle.use: true
       noxbattle.command.admin.setpositions: true
       noxbattle.command.admin.reload: true
+  noxbattle.command.help:
+    default: false
   noxbattle.command.duel:
     default: false
   noxbattle.command.accept:

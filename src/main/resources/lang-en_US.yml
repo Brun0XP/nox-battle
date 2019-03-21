@@ -1,5 +1,6 @@
 prefix: '&7[&6NoxBattle&7] &f'
 commands:
+  no-permission: '&cYou are not allowed to use this command.'
   help:
     player:
       - '&e&m-------&r&e[ NoxBattle - Help Menu ]&m-------'
@@ -11,3 +12,7 @@ commands:
       - '&c/1v1 {command_admin} &7- show admin commands.'
       - '&e&m-----------------------------------'
     admin:
+  duel:
+    error-console: '&cThis command can not be run on the console.'
+    wait: '&cPlease wait to challenge a player again.'
+    player-already-challenged: '&cThis player has already been challenged by someone, wait to challenge him.'
